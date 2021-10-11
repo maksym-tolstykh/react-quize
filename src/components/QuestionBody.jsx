@@ -15,7 +15,9 @@ export default function QuestionBody({questions,handleAnswer, currIndex,maxQuest
             <div className="answer_list">
 
                 {answers.map((answer) =>{
-                    return  <button onClick={()=>handleAnswer(answer)} className={`${questions.correct_answer === answer ? 'item_c': 'item'} item ` } dangerouslySetInnerHTML={{ __html: answer }}></button>
+                    return  <button onClick={()=>handleAnswer(answer)}          
+                                    className= 'item' //className={`${questions.correct_answer === answer ? 'item_c': 'item'} item ` }
+                                    dangerouslySetInnerHTML={{ __html: answer }}></button>
                 })}
 
                

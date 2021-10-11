@@ -38,14 +38,24 @@ code {
     text-align: center;
   }
   .answer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     .item {
-      width: 350px;
+      width: 320px;
       min-height: 100px;
-      border: 1px solid black;
+      border: 1px solid rgb(161, 161, 161);
       text-align: center;
       padding: 5px;
-      margin-bottom: 5px;
-      cursor: pointer;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 15px 2px rgba(0,0,0,0.3);
+      
+      &:hover{
+        cursor: pointer;
+        background-color: darken($color: #fff, $amount: 40);
+      }
       &_c{
         background: rgb(122, 64, 64);
       }
